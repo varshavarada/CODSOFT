@@ -13,6 +13,8 @@ def display_tasks():
   print("Tasks:")
   for index task in enumarate(tasks,start=1):
   print(f"{index}.{task}") 
+def remove_task(task):
+  tasks.remove(task)
 #usage
 add_task("complete the assingment before the deadline")
 add_task("go to temple")
@@ -20,6 +22,8 @@ add_task("complete the course")
 add_task("buy veggies")
 display_tasks()
 update_task(1,"finish assignment")
+display_tasks()
+remove_task("complete course")
 display_tasks()
 
 
